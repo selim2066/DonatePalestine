@@ -17,7 +17,8 @@
     <!-- navbar -->
     <nav class="navbar flex justify-between p-10  bg-[#F9F7F3]  shadow-sm">
         <div class="pl-14">
-            <a class="btn btn-ghost h-[49px] w-[110px] py-7 px-16 bg-[#B4F461] text-3xl">Blog</a>
+            <a id="BlogBtn" class="btn btn-ghost h-[49px] w-[110px] py-7 px-16 bg-[#B4F461] text-3xl font-bold">Blog</a>
+
         </div>
         <div class="flex items-center gap-4">
             <img src="assets/logo.png" alt="">
@@ -85,7 +86,8 @@
         <div class="hero bg-base-200 ">
             <div class="hero-content flex-col lg:flex-row items-stretch gap-7">
                 <!-- img -->
-                <img src="assets/feni.png" class="h-[389px] w-[522px]" />
+                <!-- <img src="assets/noakhali.png" class="h-[389px] w-[522px]" /> -->
+                <img src="assets/Rafah.jpg" class="h-[389px] w-[522px] rounded-lg" />
 
                 <!-- content -->
                 <div class="h-[389px] w-[522px]">
@@ -93,16 +95,15 @@
                         <button
                             class="btn btn-primary text-xl w-[110px] h-[44px] bg-slate-100  mb-5 text-black font-bold border-none"><img
                                 src="assets/coin.png" alt="">
-                            <h3 id="totalDonation">0</h3>BDT
+                            <h3 id="totalDonation-R">0</h3>BDT
                         </button>
-                        <h1 class="text-2xl font-bold w-[512px]">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <h1 class="text-2xl font-bold w-[512px]">Donate for Food at Rafa, Palestine</h1>
                         <p class="py-6 w-[522px]">
-                            The recent floods in Feni have devastated local communities, leading to severe disruption
-                            and loss. Your generous donation will help provide immediate aid, including food, clean
-                            water, and medical supplies, to those affected by this calamity. Together, we can offer
-                            crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
-                            counts towards making a real difference. Please consider donating today to assist those in
-                            urgent need.
+                            Thousands of Palestinians have overwhelmed a food distribution centre in southern Gaza,
+                            driven by hunger after nearly three months without access to fresh supplies.
+
+                            It was a chaotic scene on Tuesday in the southern city of Rafah, as men, women and children
+                            thronged the aid centre, seeking food to stave off malnutrition and starvation.
                         </p>
                     </div>
                     <!-- fieldset -->
@@ -111,9 +112,9 @@
                         <div class="w-full flex flex-col gap-3">
 
                             <!-- input -->
-                            <input id="amount" type="text" class="w-full h-[56px] rounded-lg border-gray-300"
+                            <input id="amountR" type="text" class="w-full h-[56px] rounded-lg border-gray-300"
                                 placeholder="Donation Amount" />
-                            <a id="donateNowBtn"
+                            <a id="donateNowBtn-R"
                                 class="btn btn-ghost w-full h-[57px] py-3 px-12 bg-[#B4F461] text-3xl border-x-black border-5 rounded-md font-semibold">Donate
                                 Now</a>
                         </div>
@@ -122,6 +123,8 @@
                 </div>
             </div>
         </div>
+
+
     </main>
 
     <!-- hisoty -->
@@ -135,10 +138,9 @@
 </body>
 
 <!-- script -->
-<!-- parseFloat -->
-<script>
-</script>
-<script src="js file/feature.js"></script>
-<script src="js file/calculation.js"></script>
+
+<script src="js/feature.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/calculation.js"></script>
 
 </html>

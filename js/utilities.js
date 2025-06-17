@@ -1,7 +1,8 @@
-document.getElementById('donateNowBtn').addEventListener('click', function () {
-        const totalDonation = parseFloat(document.getElementById('totalDonation').innerText)
-        const amount = parseFloat(document.getElementById('amount').value)
-        const balance = parseFloat(document.getElementById('balance').innerText)
+function calculation(id1, id2, id3){
+
+ const totalDonation = parseFloat(document.getElementById(id1).innerText)
+        const amount = parseFloat(document.getElementById(id2).value)
+        const balance = parseFloat(document.getElementById(id3).innerText)
 
         if (!isNaN(amount) && amount > 0) {
             const updatedTotal = totalDonation + amount;
@@ -14,11 +15,11 @@ document.getElementById('donateNowBtn').addEventListener('click', function () {
             }
 
             // Update values on the page
-            document.getElementById('totalDonation').innerText = updatedTotal;
-            document.getElementById('balance').innerText = updatedBalance;
+            document.getElementById(id1).innerText = updatedTotal;
+            document.getElementById(id3).innerText = updatedBalance;
 
             // Clear input
-            document.getElementById('amount').value = "";
+            document.getElementById(id2).value = "";
 
 
             // adding transaction in history
@@ -36,4 +37,7 @@ document.getElementById('donateNowBtn').addEventListener('click', function () {
         } else {
             alert('wrong input')
         }
-    })
+
+
+
+}

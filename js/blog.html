@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog_Palestine</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar flex justify-between p-10  bg-[#F9F7F3]  shadow-sm">
+        <div class="pl-14">
+            <a id="HomeBtn"
+                class=" btn btn-ghost h-[49px] w-[110px] py-7 px-16 bg-[#fc4747] text-3xl font-bold text-white">Home</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <img src="assets/logo.png" alt="">
+            <h3 class="text-4xl font-bold text-red-700 "><span class="text-green-700">Donate</span>Palestine</h3>
+        </div>
+        <div class="flex gap-4 font-semibold">
+            <img src="assets/coin.png" alt="">
+            <h3 id="balance" class="text-3xl pr-20">5500 BDT</h3>
+        </div>
+    </nav>
+
+    <!-- accordion -->
+
+    <section class=" w-full  px-44 py-16 space-y-5 flex flex-col">
+        <h1 class="font-bold text-7xl">Important FAQ <i class="fa-solid fa-question text-9xl pl-10"></i></h1>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold text-4xl">How do you get funds and supplies into Gaza when there's
+                a blockade?</div>
+            <div class="collapse-content text-2xl">Most items that come into Gaza first come through commercial
+                entities, not through NGOs. These commercial suppliers are approved and are usually allowed in,
+                especially for food items and medical supplies. Whenever borders are closed, Islamic Relief has
+                prequalified suppliers and that enables us to procure items quickly from within Gaza to meet immediate
+                needs. Some of our partners are able to bring in-kind donations from outside Gaza and the West Bank.
+                Items can sometimes get blocked during escalations, when borders are closed, or if there are delays at
+                the Karem Abu Salem crossing (the main crossing for goods into Gaza). However, they do usually get
+                through. We work hard to ensure that these essential supplies as well as what is available in local
+                markets, are available for the immediate need..</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold text-4xl">Why is it a better option to give gunds to humanitarian
+                organizations instead?</div>
+            <div class="collapse-content text-2xl">Humanitarian organizations are able to assess needs on the ground on
+                a wider scale, and in coordination with relevant actors (i.e. ministries and UN Clusters) to determine
+                the best way to utilize funds as per the urgent needs on the ground. Humanitarian organizations also
+                have standards they must maintain to ensure high-quality assistance is provided such as operating
+                standards and quality of aid, while also ensuring there is no duplication so that every person can be
+                reached equitably./div>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold text-4xl">Isn't it better to just send money directly through
+                people who have family in Palestine?</div>
+            <div class="collapse-content text-2xl">During times of crisis and emergency, banks and monetary
+                institutions are often impacted. This can prevent families from accessing banks and withdrawing
+                funds. Humanitarian organizations have existing relationships with banks and available funds on
+                reserve that they can access and utilize during such emergency crises to ensure a quick response.
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold text-4xl">How can we trust donations are delivered?</div>
+            <div class="collapse-content text-2xl">Transparency is our key value. That is why we post pictures,
+                share videos, and, most importantly, we account for every dollar given through reports on our
+                website and audits every single year.
+            </div>
+        </div>
+
+    </section>
+    <script src="feature.js"></script>
+</body>
+
+</html>
