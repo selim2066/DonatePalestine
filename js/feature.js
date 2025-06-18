@@ -18,12 +18,12 @@ document.getElementById('donationBtn').addEventListener('click', function () {
 
 document.getElementById('BlogBtn').addEventListener('click', function () {
 
-    window.location.href = "js/blog.html"
+    window.location.href = "blog.html"
 
 })
 
-
-document.getElementById('HomeBtn').addEventListener('click', function () {
-    window.location.href = "index.html";
-});
+//! its not working. i don't know why.
+// document.getElementById('HomeBtn').addEventListener('click', function () {
+//     window.location.href = "index.html";
+// });
 
