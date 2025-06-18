@@ -9,26 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.js"></script> -->
+
+
 
     <title>DonatePalestine_home</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar flex justify-between p-10  bg-[#F9F7F3]  shadow-sm">
+    <nav class="navbar sticky top-0 z-50  flex justify-between p-10  bg-[#F9F7F3]  shadow-sm">
         <div class="pl-14">
             <a id="BlogBtn" class="btn btn-ghost h-[49px] w-[110px] py-7 px-16 bg-[#B4F461] text-3xl font-bold">Blog</a>
 
         </div>
         <div class="flex items-center gap-4">
             <img src="assets/logo.png" alt="">
-            <h3 class="text-4xl font-bold text-red-700 "><span class="text-green-700">Donate</span>Palestine</h3>
+            <h3 class="text-5xl font-bold text-red-700 "><span class="text-green-700">Donate</span>Palestine</h3>
         </div>
         <div class="flex gap-4 font-semibold">
             <img src="assets/coin.png" alt="">
-            <h3 id="balance" class="text-3xl pr-20">5500 BDT</h3>
+            <h3 id="balance" class="text-3xl pr-20">15500 BDT</h3>
         </div>
     </nav>
+
+    <!-- carosoul -->
+
+
+
+
     <!-- button donation and history -->
     <div class="flex justify-center mt-20 mb-8 gap-10">
         <a id="donationBtn"
@@ -39,6 +48,8 @@
 
     <!-- main -->
     <main id="mainSection" class="max-w-[1140px] w-full mx-auto px-4 py-6 space-y-10">
+
+        <!-- first -->
 
         <div class="hero bg-base-200 ">
             <div class="hero-content flex-col lg:flex-row items-stretch gap-7">
@@ -124,6 +135,49 @@
             </div>
         </div>
 
+        <!-- Third -->
+
+
+
+        <div class="hero bg-base-200 ">
+            <div class="hero-content flex-col lg:flex-row items-stretch gap-7">
+                <!-- img -->
+                <!-- <img src="assets/noakhali.png" class="h-[389px] w-[522px]" /> -->
+                <img src="assets/khan younis refugie camp.jpg" class="h-[389px] w-[522px] rounded-lg" />
+
+                <!-- content -->
+                <div class="h-[389px] w-[522px]">
+                    <div>
+                        <button
+                            class="btn btn-primary text-xl w-[110px] h-[44px] bg-slate-100  mb-5 text-black font-bold border-none"><img
+                                src="assets/coin.png" alt="">
+                            <h3 id="totalDonation-K">0</h3>BDT
+                        </button>
+                        <h1 class="text-2xl font-bold w-[512px]">Donate for Food at Khan Younis Camp, Palestine</h1>
+                        <p class="py-6 w-[522px]">Thousands of Palestinians have overwhelmed a food distribution centre
+                            in southern Gaza,
+                            driven by hunger after nearly three months without access to fresh supplies. Khan Younis is
+                            home to about 430,000 people. At its centre is the Khan Younis refugee camp,
+                            where about 90,000 people live.
+                        </p>
+                    </div>
+                    <!-- fieldset -->
+                    <div>
+
+                        <div class="w-full flex flex-col gap-3">
+
+                            <!-- input -->
+                            <input id="amountK" type="text" class="w-full h-[56px] rounded-lg border-gray-300"
+                                placeholder="Donation Amount" />
+                            <a id="donateNowBtn-K"
+                                class="btn btn-ghost w-full h-[57px] py-3 px-12 bg-[#B4F461] text-3xl border-x-black border-5 rounded-md font-semibold">Donate
+                                Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -135,6 +189,33 @@
 
         </div>
     </section>
+
+    <!-- modal -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="text-3xl font-bold">Insufficient Balance!</h3>
+            <p class="py-4 text-xl">Please check your funds before donating.</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn bg-red-600 w-24 h-14 rounded-xl text-xl text-white">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+            <h3 class="text-3xl font-bold text-center">Wrong input!</h3>
+            <p class="py-4 text-xl">Please give number as input.</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn bg-red-600 w-24 h-14 rounded-xl text-xl text-white">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
 </body>
 
 <!-- script -->

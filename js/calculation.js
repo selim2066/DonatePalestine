@@ -37,7 +37,7 @@ document.getElementById('donateNowBtn').addEventListener('click', function () {
 //             alert('wrong input')
 //         }
 
-        calculation('totalDonation', 'amount', 'balance');
+        calculation('totalDonation', 'amount', 'balance', 'GazaCity');
     })
 
 
@@ -45,7 +45,7 @@ document.getElementById('donateNowBtn').addEventListener('click', function () {
 
     document.getElementById('donateNowBtn-R').addEventListener('click', function () {
 
-        calculation('totalDonation-R','amountR','balance')
+        calculation('totalDonation-R','amountR','balance', 'Rafah')
 //         const totalDonation = parseFloat(document.getElementById('totalDonation-R').innerText)
 //         const amount = parseFloat(document.getElementById('amountR').value)
 //         const balance = parseFloat(document.getElementById('balance').innerText)
@@ -84,4 +84,12 @@ document.getElementById('donateNowBtn').addEventListener('click', function () {
 //         } else {
 //             alert('wrong input')
 //         }
+    })
+
+    // ! for khan younis
+
+    document.getElementById('donateNowBtn-K').addEventListener('click', function(){
+
+         calculation('totalDonation-K','amountK','balance','Khan Younis')
+
     })
